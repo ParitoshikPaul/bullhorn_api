@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains bullhorn_api.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * @file
+ * This module connects to the Bullhorn applicant tracking system and imports data into Drupal.
+ */
+
+const BULLHORN_REDIRECTURI = "";
+const BULLHORN_STATE = 1;
+const BULLHORN_OAUTH_ENDPOINT = "https://auth.bullhornstaffing.com/oauth/";
+const BULLHORN_REST_ENDPOINT = "https://rest.bullhornstaffing.com/rest-services/";
+const BULLHORN_REST_TTL = 10;
+const BULLHORN_MAX_SEARCH_COUNT = 500;
+
+
+
+/**
+ * Implements hook_help().
+ */
+function bullhorn_api_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bullhorn_api module.
+    case 'help.page.bullhorn_api':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Bullhorn API authentication so that it can be utilized via other bullhorn modules.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,11 @@
+
+bullhorn_api.bullhorn_config_form:
+  path: '/admin/config/bullhorn_api/bullhornconfig'
+  defaults:
+    _form: '\Drupal\bullhorn_api\Form\BullhornConfigForm'
+    _title: 'BullhornConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

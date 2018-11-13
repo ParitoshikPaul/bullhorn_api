@@ -1,0 +1,5 @@
+name: 'bullhorn_api'
+type: module
+description: 'Bullhorn API authentication so that it can be utilized via other bullhorn modules.'
+core: 8.x
+package: 'Bullhorn'

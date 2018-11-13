@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bullhorn_api",
+  "type": "drupal-module",
+  "description": "Bullhorn API authentication so that it can be utilized via other bullhorn modules.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bullhorn_api",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bullhorn_api",
+    "source": "http://cgit.drupalcode.org/bullhorn_api"
+  },
+  "require": { }
+}
